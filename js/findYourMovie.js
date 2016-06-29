@@ -8,7 +8,7 @@
      function getMovieInfo(e)
        {
            var title = document.getElementById('title').value;
-           var url = "http://www.omdbapi.com/?t=" + title + "&plot=full&r=json";
+           var url = "https://www.omdbapi.com/?t=" + title + "&plot=full&r=json";
            xmlhttp = new XMLHttpRequest();
            xmlhttp.onreadystatechange = processData;
            xmlhttp.open("GET", url, true);
