@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Find Your Movie!</title>	
+	<link rel="stylesheet" href="css/findYourMovie.css">
+	<link href='https://fonts.googleapis.com/css?family=Lato:400,700|Slabo+27px' rel='stylesheet' type='text/css'>
+	<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+	<!--<script src="http://code.jquery.com/mobile/1.3.2/jquery.mobile-1.3.2.min.js"></script>-->
+	<script src="js/findYourMovie.js"></script>		
+</head>
+
+<body>
+	<section id="container">
+		<header id="movieHeader">
+			<h1>Look up a favorite movie of yours or any movie in the IMDB database and get the FACTS, jack!!</h1>
+			<label for="title">Movie Title</label>
+			<input type="text" id="title" />
+			<button id="btnGetInfo">Get Movie Info</button> 
+			<button value="Clear results" onClick="window.location.reload()">Clear results </button>
+		</header>        
+		<section id="movieTitle"></section>
+		<section id="movieYear"></section>		
+		<section id="movieActors"></section>
+		<section id="moviePlot"></section>
+		<section><img id="poster"/></section>
+		<div style="clear: both;"></div>
+	</section> <!-- container -->
+</body>
+</html>
